@@ -84,6 +84,15 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/api', (req, res) => {
+    res.json({
+        message: 'Need help? Check out the root endpoint for API documentation!',
+        timestamp: new Date().toISOString(),
+        database: process.env.DB_NAME
+    });
+});
+
+
 // AUTHENTICATION ROUTES
 
 // POST /api/register - Register new user
