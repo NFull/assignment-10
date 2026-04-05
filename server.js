@@ -74,6 +74,7 @@ app.get('/', (req, res) => {
         version: '1.0.0',
         endpoints: {
             health: '/health',
+            api: 'GET /api',
             register: 'POST /api/register',
             login: 'POST /api/login',
             tasks: 'GET /api/tasks (requires auth)',
